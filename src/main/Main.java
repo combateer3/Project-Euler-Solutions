@@ -1,11 +1,11 @@
 package main;
 
-import level1.Problem7;
+import level1.Problem8;
 
 public class Main {
 
     public static void main(String[] args) {
-        Problem7.solve();
+        Problem8.solve();
     }
 
 }
