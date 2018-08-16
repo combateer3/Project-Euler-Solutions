@@ -27,7 +27,6 @@ public class Problem5 {
                 break;
             } else {
                 current++;
-                //System.out.println(current);
             }
         }
     }
