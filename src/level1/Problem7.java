@@ -1,5 +1,7 @@
 package level1;
 
+import util.NumberUtils;
+
 public class Problem7 {
 
     /* By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
@@ -13,7 +15,7 @@ public class Problem7 {
         int current = 3;
 
         while (count < index) {
-            if (isPrime(current)) {
+            if (NumberUtils.isPrime(current)) {
                 count += 1;
             }
 
@@ -25,23 +27,6 @@ public class Problem7 {
         }
 
         System.out.println(current + ": " + count);
-    }
-
-    private static boolean isPrime(int num) {
-        if (num % 2 == 0) {
-            return false;
-        }
-
-        int factor = 3;
-        while (factor < num && factor != num) {
-            if (num % factor == 0) {
-                return false;
-            } else {
-                factor += 2;
-            }
-        }
-
-        return true;
     }
 
 }
